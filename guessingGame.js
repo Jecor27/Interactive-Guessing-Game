@@ -13,9 +13,9 @@ for (let i = 1; i <= 3; i++) {
     }
 
     const guess = Number(input);
-    if (Number.isNaN(guess)) {
-        console.log("Enter a valid number");
-        alert("Enter a valid number");
+    if (Number.isNaN(guess)|| guess == "") {
+        console.log("Enter a valid Input");
+        alert("Enter a valid input");
         continue;
     }
 
