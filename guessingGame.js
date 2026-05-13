@@ -4,8 +4,8 @@ const secretNumber = Math.floor(Math.random() * 10) + 1;
 
 let guessed = false;
 
-for (let i = 1; i <= 3; i++) {
-    const input = prompt(`Attempt ${i}: Guess the secret number (between 1 and 10)`);
+for (let i = 1; i <= 3; i++) { //for loop to give the user 3 attempts starting from 1 and moving to 3.
+    const input = prompt(`Attempt ${i}: Guess the secret number (between 1 and 10)`); //storing the attempt number and asking the user to guess a number
     if (input === null) {
         console.log("Game cancelled");
         alert("Game cancelled");
